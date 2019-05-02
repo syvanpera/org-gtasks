@@ -1,7 +1,11 @@
-;;; org-gtasks.el
-;; Version: 0.1
+;;; org-gtasks.el --- Org sync with Google Tasks
 
+;; Author: Julien Masson
+;; URL: https://github.com/JulienMasson/org-gtasks
+;; Maintainer: myuhe
 ;; Copyright (C) 2018 Julien Masson
+;; Keywords: convenience,
+;; Version: 0.1
 
 ;; This file is NOT part of GNU Emacs.
 
@@ -18,9 +22,19 @@
 ;; You should have received a copy of the GNU General Public License
 ;; along with GNU Emacs.  If not, see <http://www.gnu.org/licenses/>.
 
+;;; Commentary:
+;;
+;; Put the org-gtasks.el to your
+;; load-path.
+;; Add to .emacs:
+;; (require 'org-gtasks)
+;;
+
 (require 'json)
 (require 'request)
 (require 'cl-lib)
+
+;;; Code:
 
 (defconst org-gtasks-token-url "https://www.googleapis.com/oauth2/v3/token"
   "Google OAuth2 server URL.")
@@ -498,3 +512,5 @@
 
 
 (provide 'org-gtasks)
+
+;;; org-gtasks.el ends here
