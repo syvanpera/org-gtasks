@@ -1,4 +1,5 @@
 ;;; org-gtasks.el
+;; Version: 0.1
 
 ;; Copyright (C) 2018 Julien Masson
 
